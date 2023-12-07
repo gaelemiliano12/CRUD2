@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sucursales de la empresa</title>
+  <style>
+    /* Estilos CSS para dar formato a los elementos */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background: #356fb3; /* Color de fondo predeterminado */
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    .branch {
+      margin-bottom: 20px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      background: #c5dbf5; /* Color de fondo del contenedor de sucursal */
+    }
+
+    .branch img {
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 10px;
+    }
+
+    .branch h2 {
+      margin-top: 0;
+    }
+
+    .branch p {
+      margin: 0;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 4px;
+      margin-right: 10px;
+    }
+
+    .btn:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <h1>Sucursales Abiertas</h1>
+
+  <div class="branch">
+    <img src="Sucursal.jpg" alt="Sucursal 1">
+    <h2>Sucursal Toluca</h2>
+    <p>Dirección: Toluca Centro</p>
+    <p>Horario: Lunes a Sabado / 8:00am-10:00pm</p>
+    <a href="#" class="btn" onclick="changeBackground('sucursal1.jpg')">Ver productos</a>
+    <a href="#" class="btn" onclick="changeBackground('sucursal1.jpg')">Comprar en esta sucursal</a>
+  </div>
+
+  <div class="branch">
+    <img src="#" alt="Sucursal 2">
+    <h2>Nueva Sucursal Pronto</h2>
+    <p>Dirección: ******</p>
+    <p>Horario: ******</p>
+    <a href="#" class="btn" onclick="changeBackground('sucursal2.jpg')">Ver productos</a>
+    <a href="#" class="btn" onclick="changeBackground('sucursal2.jpg')">Comprar en esta sucursal</a>
+  </div>
+
+  <div class="branch">
+    <img src="#" alt="Sucursal 3">
+    <h2>Nueva Sucursal Pronto</h2>
+    <p>Dirección: ******</p>
+    <p>Horario: ******</p>
+    <a href="#" class="btn" onclick="changeBackground('sucursal3.jpg')">Ver productos</a>
+    <a href="#" class="btn" onclick="changeBackground('sucursal3.jpg')">Comprar en esta sucursal</a>
+  </div>
+
+  <div class="inferior">
+    <a href="index.html">Volver</a>
+
+  <script>
+    function changeBackground(imageUrl) {
+      document.body.style.background = "url('" + imageUrl + "') no-repeat center center fixed";
+      document.body.style.backgroundSize = "cover";
+    }
+  </script>
+</body>

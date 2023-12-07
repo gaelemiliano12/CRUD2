@@ -1,0 +1,53 @@
+.row
+{
+    display:flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.columna
+{
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.columna-33
+{
+    width: 33.33%;
+}
+#compus .bloque-computadoras
+{
+    border: 1px solid black;
+}
+#compus .bloque-computadoras .bloque-img-inicio
+{
+
+}
+#compus .bloque-computadoras .bloque-img-inicio img
+{
+    width: 100%;
+}
+#compus .bloque-computadoras .bloque-contenido-compu
+{
+    padding: 15px;
+}
+#compus .bloque-computadoras .bloque-contenido-compu h3
+{
+    margin-top: 0;
+    font-size: 25px;
+
+}
+header .container
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.boton.boton-blanco
+{
+    color: red;
+    background-color: white;
+    font-size: 15px;
+    font-weight: bold;
+    border: 1px solid red;
+}

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Novedades y Promociones</title>
+  <style>
+    /* Estilos CSS para dar formato a los elementos */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background: #356fb3; /* Color de fondo predeterminado */
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    .item {
+      display: flex;
+      margin-bottom: 20px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      background: #c5dbf5; /* Color de fondo del contenedor de cada item */
+    }
+
+    .item img {
+      max-width: 150px;
+      height: auto;
+      margin-right: 10px;
+    }
+
+    .item-details {
+      flex-grow: 1;
+    }
+
+    .item h2 {
+      margin-top: 0;
+    }
+
+    .item p {
+      margin: 0;
+    }
+
+    .item-price {
+      font-weight: bold;
+    }
+
+    .item-discount {
+      color: #4CAF50; /* Color del porcentaje de descuento */
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 4px;
+      margin-right: 10px;
+    }
+
+    .btn:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <h1>Novedades y Promociones</h1>
+
+  <div class="item">
+    <img src="teclado1.jpg" alt="Producto 1">
+    <div class="item-details">
+      <h2>Teclado Redradon K530 Draconic</h2>
+      <p>Descripción del Producto</p>
+      <p class="item-price">
+        Precio: $250.00 MXN
+        <span class="item-discount">-30%</span>
+      </p>
+      <p>Periodo de descuento: 01/06/2023 - 15/06/2023</p>
+    </div>
+    <a href="#" class="btn" onclick="changeBackground('producto1.jpg')">Ver más</a>
+  </div>
+
+  <div class="item">
+    <img src="Mouse1.jpg" alt="Producto 2">
+    <div class="item-details">
+      <h2>Mouse Logitec G203 </h2>
+      <p>Descripción del Producto</p>
+      <p class="item-price">
+        Precio: $100.00 MXN
+        <span class="item-discount">-20%</span>
+      </p>
+      <p>Periodo de descuento: 10/06/2023 - 30/06/2023</p>
+    </div>
+    <a href="#" class="btn" onclick="changeBackground('producto2.jpg')">Ver más</a>
+  </div>
+
+  <div class="item">
+    <img src="Monitor1.jpg" alt="Producto 3">
+    <div class="item-details">
+      <h2>Monitor LG 29WP60G-B</h2>
+      <p>Descripción del Producto</p>
+      <p class="item-price">
+        Precio: $370.00 MXN
+        <span class="item-discount">-15%</span>
+      </p>
+      <p>Periodo de descuento: 01/07/2023 - 15/07/2023</p>
+    </div>
+    <a href="#" class="btn" onclick="changeBackground('producto3.jpg')">Ver más</a>
+  </div>
+
+  <script>
+    function changeBackground(imageUrl) {
+      document.body.style.background = "url('" + imageUrl + "') no-repeat center center fixed";
+      document.body.style.backgroundSize = "cover";
+    }
+  </script>
+</body>
+</html>

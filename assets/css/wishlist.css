@@ -1,0 +1,24 @@
+.encabezado{
+    width: 100%;
+    background-color: red;
+}
+.item
+{
+    color:black;
+    text-align: center;
+    font-size: 16px;
+
+} 
+.priority
+{
+    color:black;
+    text-align: center;
+    font-size: 16px;
+}
+.boton
+{
+    background-color: white;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+}

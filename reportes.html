@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Reportes de Alquileres</title>
+  <link rel="stylesheet" type="text/css" href="assets/css/repotes.css">
+</head>
+<body>
+  <h1>Reportes de Alquileres</h1>
+  
+  <form>
+    <h2>Reporte de alquileres por periodo de tiempo</h2>
+    <label for="start-date">Fecha de inicio:</label>
+    <input type="date" id="start-date" name="start-date" required>
+    
+    <label for="end-date">Fecha de fin:</label>
+    <input type="date" id="end-date" name="end-date" required>
+    
+    <button type="submit">Generar reporte</button>
+  </form>
+  
+  <form>
+    <h2>Reporte de ingresos generados por alquileres</h2>
+    <label for="year">Año:</label>
+    <input type="number" id="year" name="year" min="1900" max="2099" required>
+    
+    <button type="submit">Generar reporte</button>
+  </form>
+  <div class="inferior">
+    <a href="index.html">Volver</a>
+</body>
+</html>

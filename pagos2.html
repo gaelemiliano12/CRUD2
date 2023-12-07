@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pagos y Transacciones</title>
+  <style>
+    /* Estilos CSS para dar formato a los elementos */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background: #356fb3; /* Color de fondo predeterminado */
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    .payment {
+      margin-bottom: 20px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      background: #c5dbf5; /* Color de fondo del contenedor de pago */
+    }
+
+    .payment h2 {
+      margin-top: 0;
+    }
+
+    .payment p {
+      margin: 0;
+    }
+
+    .note {
+      margin-top: 20px;
+      font-style: italic;
+      text-align: center;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 4px;
+      margin-right: 10px;
+    }
+
+    .btn:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <h1>Pagos y Transacciones</h1>
+
+  <div class="payment">
+    <img src="Asus foto.jpg" alt="Equipo 1">
+    <h2>Producto: Laptop Asus Zenbook 14 OLED</h2>
+    <p>Sucursal: Sucursal Toluca</p>
+    <p>Usuario: Cesar Nava</p>
+    <p>Periodo de renta: 01/07/2023 - 30/07/2023</p>
+    <p>Total a pagar: $1400.00 MXN</p>
+    <p>Estado de la transacción: En Proceso</p>
+    <a href="#" class="btn" onclick="changeBackground('sucursal1.jpg')">Ver detalles</a>
+    <a href="#" class="btn" onclick="changeBackground('sucursal1.jpg')">Pagar</a>
+  </div>
+
+  <div class="payment">
+    <img src="Pc 1 gamer.jpg" alt="Equipo 2">
+    <h2>Producto: PC para Gaming</h2>
+    <p>Sucursal: Sucursal Toluca</p>
+    <p>Usuario: Cesar Nava</p>
+    <p>Periodo de renta: 01/07/2023 - 31/07/2023</p>
+    <p>Total a pagar: $1600.00 MXN</p>
+    <p>Estado de la transacción: Pendiente</p>
+    <a href="#" class="btn" onclick="changeBackground('sucursal2.jpg')">Ver detalles</a>
+    <a href="#" class="btn" onclick="changeBackground('sucursal2.jpg')">Pagar</a>
+  </div>
+
+  <div class="payment">
+    <img src="Pc 2 dedicada gamer.jpg" alt="Equipo 3">
+    <h2>Producto: PC para Gaming Dedicada</h2>
+    <p>Sucursal: Sucursal Toluca</p>
+    <p>Usuario: Cesar Nava</p>
+    <p>Periodo de renta: 01/08/2023 - 31/08/2023</p>
+    <p>Total a pagar: $1800.00 MXN</p>
+    <p>Estado de la transacción: Pendiente</p>
+    <a href="#" class="btn" onclick="changeBackground('sucursal3.jpg')">Ver detalles</a>
+    <a href="#" class="btn" onclick="changeBackground('sucursal3.jpg')">Pagar</a>
+  </div>
+
+  <div class="note">
+    <p>Por favor, asegúrese de devolver el producto en buenas condiciones.</p>
+  </div>
+
+  <script>
+    function changeBackground(imageUrl) {
+      document.body.style.background = "url('" + imageUrl + "') no-repeat center center fixed";
+      document.body.style.backgroundSize = "cover";
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Formulario de Reservas</title>
+  <link rel="stylesheet" type="text/css" href="assets/css/reservas.css">
+</head>
+<body>
+  <h1>Formulario de Reservas</h1>
+
+  <form action="reserva.php" method="post">
+    <label for="nombre">Nombre de usuario:</label>
+    <input type="text" id="nombre" name="nombre" required>
+
+    <label for="equipo">Equipo:</label>
+    <select id="equipo" name="equipo" required>
+      <option value="equipo1">Laptop Asus Zenbook 14 OLED</option>
+      <option value="equipo2">PC para Gaming</option>
+      <option value="equipo3">PC para Gaming Dedicada</option>
+    </select>
+
+    <label for="accesorios">Accesorios:</label>
+    <input type="checkbox" id="accesorio1" name="accesorios[]" value="accesorio1">
+    <label for="accesorio1">Accesorio 1</label>
+    <input type="checkbox" id="accesorio2" name="accesorios[]" value="accesorio2">
+    <label for="accesorio2">Accesorio 2</label>
+    <input type="checkbox" id="accesorio3" name="accesorios[]" value="accesorio3">
+    <label for="accesorio3">Accesorio 3</label>
+
+    <label for="fecha_inicio">Fecha de inicio:</label>
+    <input type="date" id="fecha_inicio" name="fecha_inicio" required>
+
+    <label for="hora_inicio">Hora de inicio:</label>
+    <input type="time" id="hora_inicio" name="hora_inicio" required>
+
+    <label for="fecha_fin">Fecha de finalización:</label>
+    <input type="date" id="fecha_fin" name="fecha_fin" required>
+
+    <label for="hora_fin">Hora de finalización:</label>
+    <input type="time" id="hora_fin" name="hora_fin" required>
+
+    <input type="submit" value="Enviar">
+    
+  </form>
+  <div class="inferior" style="text-align: right;">
+    <a href="Productos.html">Volver</a>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Formulario de Pago</title>
+  <style>
+    body {
+      background-color: rgb(93, 186, 219);
+      color: white;
+      font-family: Arial, sans-serif;
+    }
+
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+
+    input[type="text"],
+    select {
+      width: 250px;
+      padding: 5px;
+    }
+
+    input[type="submit"] {
+      margin-top: 10px;
+      padding: 10px 20px;
+      background-color: white;
+      color: blue;
+      border: none;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: lightgray;
+    }
+  </style>
+</head>
+<body>
+  <h1>Formulario de Pago</h1>
+  <form>
+    <label for="id_usuario">ID de Usuario:</label>
+    <input type="text" id="id_usuario" name="id_usuario" required>
+
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre" required>
+
+    <label for="monto">Monto:</label>
+    <input type="text" id="monto" name="monto" required>
+
+    <label for="tipo_pago">Tipo de Pago:</label>
+    <select id="tipo_pago" name="tipo_pago" required>
+      <option value="efectivo">Efectivo</option>
+      <option value="tarjeta">Tarjeta</option>
+      <option value="transaccion">Transacción</option>
+    </select>
+
+    <input type="submit" value="Realizar Pago">
+  </form>
+</body>
+</html>
